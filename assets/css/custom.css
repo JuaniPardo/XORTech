@@ -7,8 +7,12 @@
     --gris: #a4b3b6;
 }
 
+.navbar-nav .nav-item.active .nav-link {
+    color: var(--primario); /* Cambia el color al que desees */
+}
+
 body {
-    font-family: 'Radley', serif;
+    /*font-family: 'Radley', serif;*/
     font-family: 'Quicksand', sans-serif;
 }
 
