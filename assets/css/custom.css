@@ -8,7 +8,20 @@
 }
 
 .navbar-nav .nav-item.active .nav-link {
-    color: var(--primario); /* Cambia el color al que desees */
+    color: var(--primario);
+}
+
+.nav-link {
+    color: #f1f1f1;
+}
+
+.nav-link:hover {
+    color: var(--suave);
+}
+
+a.nav-link.activo {
+    color: var(--primario);
+    font-weight: 600;
 }
 
 body {
