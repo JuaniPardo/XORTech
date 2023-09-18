@@ -6,18 +6,19 @@
 
 .logo {
     position: relative;
+    top: 2px;
     width: 20px; /* Ancho del contenedor */
     height: 20px; /* Alto del contenedor */
     border-radius: 50%;
     border: 1.5px solid var(--suave); /* Borde del contenedor */
     margin: 0;
-    display: flex;
+    display: inline-flex;
     transition: .5s ease-in-out;
 }
 
 /* Estilo para las líneas horizontales y verticales */
 .logo-icon {
-    position: absolute;
+    /*position: absolute;*/
     width: 20px; /* Ancho de cada línea */
     height: 1.5px; /* Altura de las líneas */
     background-color: var(--primario); /* Color de las líneas */
@@ -26,13 +27,13 @@
 /* Estilo para la línea horizontal */
 .hor-bar1 {
     position: absolute;
-    margin-top: 0px; /* Ajusta la posición vertical de la línea horizontal */
+    margin-top: 0; /* Ajusta la posición vertical de la línea horizontal */
 }
 
 .hor-bar2 {
     position: absolute;
     z-index: 2;
-    margin-top: 0px; /* Ajusta la posición vertical de la línea horizontal */
+    margin-top: 0; /* Ajusta la posición vertical de la línea horizontal */
     transition: .5s ease-in-out;
 
 }
@@ -41,14 +42,14 @@
 .ver-bar1 {
     position: absolute;
     transform: rotate(90deg); /* Rota la línea vertical 90 grados */
-    margin-top: 0px; /* Ajusta la posición vertical de la línea vertical */
+    margin-top: 0; /* Ajusta la posición vertical de la línea vertical */
 }
 
 .ver-bar2 {
     position: absolute;
     z-index: 2;
     transform: rotate(90deg); /* Rota la línea vertical 90 grados */
-    margin-top: 0px; /* Ajusta la posición vertical de la línea vertical */
+    margin-top: 0; /* Ajusta la posición vertical de la línea vertical */
     transition: .5s ease-in-out;
 }
 
@@ -57,15 +58,18 @@
 }
 
 .navbar-brand:hover .logo {
-
     border: 1.5px solid #f1f1f1;
+}
+
+.navbar-brand:hover .erre {
+    transform: scaleX(1);
 }
 
 .navbar-brand:hover .ver-bar2 {
     position: absolute;
     z-index: 2;
     transform: translateX(-20px) rotate(-45deg) ;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #f1f1f1;
 }
 
@@ -78,6 +82,7 @@
 }
 
 .erre {
+    transform: scaleX(0);
     margin: 0;
     padding: 0;
     border: 0;
