@@ -19,6 +19,10 @@
     color: var(--suave);
 }
 
+a.navLink {
+    text-decoration: none;
+}
+
 a.navLink.activo {
     color: var(--primario);
     font-weight: 600;
