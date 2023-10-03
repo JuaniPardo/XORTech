@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 /*VARIABLES COLORES*/
 :root {
     --primario: #D83787;
@@ -6,6 +8,10 @@
     --suave: #7d62a0;
     --gris: #a4b3b6;
     --dark: #171717;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 @keyframes glow {
@@ -105,13 +111,14 @@ img {
 }
 
 .hero .product-title {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .description {
-    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400    ;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 150%;
 }
 
 /*CSS PARA CARD CATEGORIAS*/
@@ -260,7 +267,25 @@ a:hover .flecha {
 }
 
 /*CSS TARJETA*/
+
 .tarjeta {
+    transition: all .2s ease-in-out;
+    background-color: #F1F1F1;
+}
+
+.tarjeta-descripcion {
+    transition: all .2s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+}
+
+.tarjeta:hover > .tarjeta-descripcion {
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* .tarjeta {
     position: relative;
     width: 300px;
     height: 400px;
@@ -365,7 +390,7 @@ a:hover .flecha {
 .tarjeta:hover .cardData .comprar {
     top: 50px;
     opacity: 1;
-}
+} */
 
 /*FORMULARIO REGISTRO*/
 .formulario {
@@ -386,4 +411,8 @@ a:hover .flecha {
     position: relative;
     width: 80%;
     padding: 5px 0;
+}
+
+.bg-customdark {
+    background-color: #141414;
 }
