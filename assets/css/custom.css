@@ -435,3 +435,34 @@ a:hover .flecha {
     filter: drop-shadow(-5px 35px 15px rgba(0, 0, 0, 0.3));
     transition: all .3s ease-in-out;
 }
+
+.parlante__circulo {
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+
+.parlante__circulo2 {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+
+/* BANNER MONITOR */
+
+.monitor-banner {
+    padding: 150px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/monitorbanner.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    transition: all 1s ease-in-out;
+}
